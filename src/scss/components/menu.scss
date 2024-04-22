@@ -1,0 +1,21 @@
+.menu {
+	ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 310px 100px 0px;
+		display: flex;
+		justify-content: space-between;
+
+		li {
+			a {
+				font-size: 32px;
+				text-decoration: none;
+				color: var(--nav-color);
+			}
+		}
+
+		li a:hover {
+			color: var(--nav-color-hover);
+		}
+	}
+}

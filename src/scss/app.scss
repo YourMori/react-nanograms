@@ -1,0 +1,88 @@
+@import './components/all.scss';
+@import './_normalize-custom.scss';
+
+body {
+	--bkg-color: #96e560;
+	--text-color-main: #215a1a;
+	--text-color-second: #ccc;
+	--nav-color: #07205b;
+	--nav-color-hover: #264ba2;
+	--switch-color: #360e63;
+	--card-color: #397f48;
+}
+
+body.dark-theme {
+	--bkg-color: #000;
+	--text-color-main: #929ca0;
+	--text-color-second: #1a1a1a;
+	--nav-color: #360e63;
+	--nav-color-hover: #5e2f94;
+	--switch-color: #35cafb;
+	--card-color: #949fa3;
+}
+
+body {
+	background-color: var(--bkg-color);
+}
+
+.content {
+	background-color: var(--bkg-color);
+}
+
+.wrapper {
+	padding-top: 170px;
+	margin: 0 auto;
+	color: var(--text-color-main);
+	width: calc(100vw - 200px);
+	max-width: 1400px;
+}
+
+.animation {
+	display: block;
+	position: relative;
+	z-index: 10;
+}
+
+.animation_layer {
+	background-position: top center;
+	background-repeat: repeat-x;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}
+
+.animation_layer.parallax {
+	position: fixed;
+}
+
+#sky_back {
+	background-image: url('../assets/png/light-theme/back-sky.png');
+}
+
+body.dark-theme #sky_back {
+	background-image: url('../assets/png/dark-theme/back-sky.png');
+}
+
+#mountain_back {
+	background-image: url('../assets/png/light-theme/clouds.png');
+}
+
+body.dark-theme #mountain_back {
+	background-image: url('../assets/png/dark-theme/back-mountains.png');
+}
+
+#mountain_middle {
+	background-image: url('../assets/png/light-theme/ground.png');
+}
+
+body.dark-theme #mountain_middle {
+	background-image: url('../assets/png/dark-theme/middle-mountains.png');
+}
+
+#mountain_front {
+	background-image: url('');
+}
+
+body.dark-theme #mountain_front {
+	background-image: url('../assets/png/dark-theme/front-mountains.png');
+}

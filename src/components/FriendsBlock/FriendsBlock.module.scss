@@ -1,0 +1,21 @@
+.root {
+	display: flex;
+	background-color: var(--card-color);
+	color: var(--text-color-second);
+	border-radius: 20px;
+	width: 400px;
+	height: 200px;
+
+	img {
+		width: 200px;
+	}
+}
+
+.user {
+	display: flex;
+	flex-direction: column;
+}
+
+.actions {
+	display: flex;
+}

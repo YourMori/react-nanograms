@@ -1,0 +1,19 @@
+.friends {
+	h1 {
+		font-size: 52px;
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	img {
+		width: 200px;
+		margin: 0 auto;
+	}
+}
+
+.friends-wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	gap: 50px;
+}
