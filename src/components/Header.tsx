@@ -14,7 +14,7 @@ const Header: React.FC = () => {
 			<nav className='menu'>
 				<ul>
 					<li>
-						<a href='#'>Играть</a>
+						<Link to='play'>Играть</Link>
 					</li>
 					<li>
 						<Link to='tournament'>Турнир</Link>

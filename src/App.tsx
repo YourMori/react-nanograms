@@ -7,6 +7,7 @@ import Switch from './components/Switch';
 import Friends from './pages/Friends';
 import Home from './pages/Home';
 import Tournament from './pages/Tournament';
+import Play from './pages/Play';
 
 function App() {
 	return (
@@ -29,12 +30,13 @@ function App() {
 				<ParallaxLayer offset={0} speed={0.7}>
 					<div className='animation_layer parallax' id='mountain_front'></div>
 				</ParallaxLayer>
-				<ParallaxLayer offset={0.8} speed={0.7}>
+				<ParallaxLayer offset={0.6} speed={0.7}>
 					<main className='content'>
 						<div className='wrapper'>
 							<Routes>
 								<Route path='/'>
 									<Route path='' element={<Home />} />
+									<Route path='play' element={<Play />} />
 									<Route path='friends' element={<Friends />} />
 									<Route path='tournament' element={<Tournament />} />
 								</Route>

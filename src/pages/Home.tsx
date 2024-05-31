@@ -1,6 +1,16 @@
-import React from 'react';
+import React, { useRef, useState } from 'react';
 
 const Home: React.FC = () => {
+	const [isRules, setIsRules] = useState(true);
+
+	const onRulesClick = () => {
+		if (isRules) {
+			setIsRules(false);
+		} else {
+			setIsRules(true);
+		}
+	}
+
 	return (
 		<div className='home'>
 			<h1>Что такое японские кроссворды?</h1>
@@ -24,7 +34,7 @@ const Home: React.FC = () => {
 			</p>
 			<h2>Хочешь попробовать себя в решении японских кроссвордов?</h2>
 			<h2>Тогда скорее переходи к своему первому кроссворду!</h2>
-			<button>Играть</button>
+			<button onClick={onRulesClick}>Играть</button>
 		</div>
 	);
 };
